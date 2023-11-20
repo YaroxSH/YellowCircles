@@ -25,7 +25,7 @@ class Example(QWidget):
             qp.end()
 
     def draw_circle(self, qp):
-        qp.setBrush(QColor('yellow'))
+        qp.setBrush(QColor(random.randrange(0, 255), random.randrange(0, 255), random.randrange(0, 255)))
         w, h = self.geometry().width(), self.geometry().height()
         x, y = random.randrange(0, w - 20), random.randrange(0, h - 20)
         d = random.randrange(10, w - 30)
